@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     var path = require('path');
     grunt.loadNpmTasks('grunt-contrib-copy')
 
-    var buildDir = require('../buildDir.js')();    
+    var buildDir = require('../buildDir.js')();
 
     var dest = path.join(buildDir);
 
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         ], dest, {
           rename: function(base, destPath) {
             var res = path.join(base, destPath);
-            
+
             res = res.replace(localeInterfix,'');
 
             console.log("copy : " + res + " copied");
@@ -23,8 +23,11 @@ module.exports = function(grunt) {
         });
     grunt.config('copy', {
         dev: {
-          files: files          
-        }   
+          files: files
+        },
+        production: {
+          files: files
+        }
     });
 
 };

@@ -22,6 +22,7 @@ module.exports = function(grunt) {
         dev: {
             options: {
                 compress: false,
+                sourceMap: false,
                 strictImports: true
             },
             files: files
@@ -29,7 +30,9 @@ module.exports = function(grunt) {
         production: {
             options: {
                 compress: true,
-                strictImports: true
+                sourceMap: false,
+                strictImports: true,
+                optimization: 5
             },
             files: files
         }

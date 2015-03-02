@@ -55,6 +55,33 @@ module.exports = function(grunt) {
                 }
             },
             files: indexFile
+        },
+        productionall: {
+            options: {
+                amd: true,
+                client: true,
+                compileDebug: false,
+                namespace: 'TEMPLATES',
+                processName: function(filename){
+                    var res = filename.replace(/\.jade$/, '');
+                    res = res.replace(/\\/g,'/');
+                    res = res.replace(mainPathInterfix, '');
+                    res = path.join('views',res.replace(jadePathInterfix, '')).replace(/\\/g,'/');
+
+                    console.log("jade : " + res + " compiled");
+                    return res;
+                }
+            },
+            files: files
+        },
+        productionindex: {
+            options: {
+                client: false,
+                processName: function(filename){
+                    console.log("jade : " + filename + " compiled");
+                }
+            },
+            files: indexFile
         }
     });
 };

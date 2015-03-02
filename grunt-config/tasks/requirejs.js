@@ -15,11 +15,11 @@ module.exports = function(grunt) {
         "angular-local-storage": "lib/angular-local-storage",
         "angular-messages": "lib/angular-messages",
         "angular-mocks": "lib/angular-mocks",
-        "angular-resource": "lib/angular-resource",        
+        "angular-resource": "lib/angular-resource",
         "angular-route": "lib/angular-route",
         "angular-sanitize": "lib/angular-sanitize",
         "angular-scenario": "lib/angular-scenario",
-        "angular-touch": "lib/angular-touch",        
+        "angular-touch": "lib/angular-touch",
         "angular-ui-bootstrap": "lib/ui-bootstrap-tpls-0.12.1",
         "angular-ui-router": "lib/angular-ui-router",
         "d3": "lib/d3",
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
     var pathToConfig = path.join('src', 'config', 'require.config.js');
 
     optimizeOptions = grunt.option('build-requirejs-optimize') || 'none';
-    
+
     grunt.config('requirejs', {
         dev: {
             options: {
@@ -52,6 +52,7 @@ module.exports = function(grunt) {
             options: {
                 name: 'app',
                 optimize: 'uglify2',
+                preserveLicenseComments: false,
                 baseUrl: 'src',
                 paths: paths,
                 mainConfigFile: 'src/config/require.config.js',
