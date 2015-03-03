@@ -1,3 +1,5 @@
 define([
-	'core/controllers/PageNotFoundController'
-],function(){});
+    'core/controllers/PageNotFoundController'
+],function(){
+
+});

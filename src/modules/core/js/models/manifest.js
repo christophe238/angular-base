@@ -1,5 +1,5 @@
 define([
-	'core/models/Locale'
+    'core/models/Locale'
 ],function(){
 
 });

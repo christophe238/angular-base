@@ -1,8 +1,8 @@
 define([
-	'angular'
+    'angular'
 ],function(ng){
 
-	var app = ng.module('HeaderApp',[]);
+    var app = ng.module('HeaderApp',[]);
 
-	return app;
+    return app;
 })

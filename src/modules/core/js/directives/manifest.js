@@ -1,5 +1,5 @@
 define([
-	'core/directives/Spinner'
+    'core/directives/Spinner'
 ],function(){
 
 });

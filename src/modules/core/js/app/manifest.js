@@ -1,7 +1,7 @@
 define([
-	'core/app/AppLocalStorage',
-	'core/app/CoreRouterApp',
-	'core/app/LocaleApp',
+    'core/app/AppLocalStorage',
+    'core/app/CoreRouterApp',
+    'core/app/LocaleApp',
 ],function(){
 
 });

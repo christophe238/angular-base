@@ -12,21 +12,21 @@ module.exports = function(grunt) {
         path.join('fonts','*'),
         path.join('src','modules','core','locale','*')
         ], dest, {
-          rename: function(base, destPath) {
-            var res = path.join(base, destPath);
+            rename: function(base, destPath) {
+                var res = path.join(base, destPath);
 
-            res = res.replace(localeInterfix,'');
+                res = res.replace(localeInterfix,'');
 
-            console.log("copy : " + res + " copied");
-            return res;
-          }
+                console.log("copy : " + res + " copied");
+                return res;
+            }
         });
     grunt.config('copy', {
         dev: {
-          files: files
+            files: files
         },
         production: {
-          files: files
+            files: files
         }
     });
 

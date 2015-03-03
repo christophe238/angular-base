@@ -1,15 +1,15 @@
 define([
-	'angular',
+    'angular',
     'core/services/CommonResolveStateService',
-	'angular-ui-router',
+    'angular-ui-router',
 
     'views/core/page-not-found'
 ],function(ng,CommonResolveStateService){
 
-	var app = ng.module('CoreRouterApp',['ui.router']);
+    var app = ng.module('CoreRouterApp',['ui.router']);
 
-	app.config(['$stateProvider', '$urlRouterProvider',
-        function($stateProvider, $urlRouterProvider) {            
+    app.config(['$stateProvider', '$urlRouterProvider',
+        function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise(function($injector,$location){
                 var path = $location.path();
                 $location.replace().path('/page-not-found' + path);
@@ -30,5 +30,5 @@ define([
                     }
                 }));
     }]);
-	return app;
+    return app;
 });

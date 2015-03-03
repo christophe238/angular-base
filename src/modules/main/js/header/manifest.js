@@ -1,6 +1,6 @@
 define([
-	'main/header/HeaderApp',
-	'main/header/controllers/HeaderController'
+    'main/header/HeaderApp',
+    'main/header/controllers/HeaderController'
 ], function(){
 
 });

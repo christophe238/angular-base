@@ -1,13 +1,13 @@
 define([
-	'angular',
-	'core/app/manifest'
+    'angular',
+    'core/app/manifest'
 ],function(ng){
 
-	var app = ng.module('CoreApp',[
-		'AppLocalStorage',
-		'CoreRouterApp',
-		'LocaleApp'
-	]);
-	
-	return app;
+    var app = ng.module('CoreApp',[
+        'AppLocalStorage',
+        'CoreRouterApp',
+        'LocaleApp'
+    ]);
+
+    return app;
 });

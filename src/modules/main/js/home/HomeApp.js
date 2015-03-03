@@ -1,12 +1,12 @@
 define([
-	'angular',
-	'views/main/home/home',
+    'angular',
+    'views/main/home/home',
     'core/services/CommonResolveStateService'
 ],function(ng,HomeApp,CommonResolveStateService){
 
-	var app = ng.module('HomeApp',[]);
+    var app = ng.module('HomeApp',[]);
 
-	app.config(['$stateProvider', '$urlRouterProvider',
+    app.config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.when('','/home');
             $urlRouterProvider.when('#','/home');
@@ -21,5 +21,5 @@ define([
                     }
                 }));
     }]);
-	return app;
+    return app;
 })

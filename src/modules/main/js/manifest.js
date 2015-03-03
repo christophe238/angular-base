@@ -1,6 +1,6 @@
 define([
-	'main/header/manifest',
-	'main/home/manifest'
+    'main/header/manifest',
+    'main/home/manifest'
 ], function(){
 
 });
