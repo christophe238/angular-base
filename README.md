@@ -10,23 +10,17 @@ NodeJS is used to provide you a sample proxy and a local server to access your a
 Also it provides you a localeService already built to deal with browser's locale (PolyglotJS). Just fill in your lang.json files. You can simply implement on top of it a service to refresh the locale based on user selection.
 
 ##Dependencies
-AngularJS : https://angularjs.org/
+- AngularJS : https://angularjs.org/
+- RequireJS : http://requirejs.org
+- Less (write less do more) : http://lesscss.org
+- Jade (simplified html) : https://github.com/jadejs/jade
+- Grunt (compile + build) : http://gruntjs.com
+- NodeJS (proxy + local server) : http://nodejs.org
 
-Angular Ui Router : https://github.com/angular-ui/ui-router/
-
-Angular Ui Bootstrap : http://angular-ui.github.io/bootstrap/
-
-RequireJS : http://requirejs.org/
-
-Less : http://lesscss.org/
-
-Jade : https://github.com/jadejs/jade
-
-Grunt (compile + build) : http://gruntjs.com/
-
-NodeJS (proxy + local server) : http://nodejs.org/
-
-Polyglot (i18n) : http://airbnb.github.io/polyglot.js/
+####Optional
+- Angular Ui Router : https://github.com/angular-ui/ui-router
+- Angular Ui Bootstrap : http://angular-ui.github.io/bootstrap
+- Polyglot (i18n) : http://airbnb.github.io/polyglot.js/
 
 ##Setup
 To install all required dependencies run :
@@ -70,7 +64,7 @@ $ node node/app --host <host> --port <port>
 - `<port>` is optional. It's default value will be 8080.
 
 Running webapp will be available at :
- - `http://localhost:7000`
+- `http://localhost:7000`
 
 ##Live Edit
 In order for you app to take your changes into account run :
