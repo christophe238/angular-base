@@ -24,6 +24,8 @@ Just to make your life easier, we included those :
 - Angular Ui Bootstrap : http://angular-ui.github.io/bootstrap
 - Polyglot (i18n) : http://airbnb.github.io/polyglot.js/
 - Lodash : https://lodash.com/
+- jQuery : http://jquery.com/
+- d3 (svg manipulation, create widgets) : http://d3js.org/
 
 ##Setup
 To install all required dependencies run :
