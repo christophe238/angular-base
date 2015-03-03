@@ -10,17 +10,19 @@ NodeJS is used to provide you a sample proxy and a local server to access your a
 Also it provides you a localeService already built to deal with browser's locale (PolyglotJS). Just fill in your lang.json files. You can simply implement on top of it a service to refresh the locale based on user selection.
 
 ##Dependencies
+####For this project to work
 - AngularJS : https://angularjs.org/
 - RequireJS : http://requirejs.org
 - Less (write less do more) : http://lesscss.org
 - Jade (simplified html) : https://github.com/jadejs/jade
 - Grunt (compile + build) : http://gruntjs.com
 - NodeJS (proxy + local server) : http://nodejs.org
-
 ####Optional
+Just to make your life easier, we included those :
 - Angular Ui Router : https://github.com/angular-ui/ui-router
 - Angular Ui Bootstrap : http://angular-ui.github.io/bootstrap
 - Polyglot (i18n) : http://airbnb.github.io/polyglot.js/
+- Lodash : https://lodash.com/
 
 ##Setup
 To install all required dependencies run :
