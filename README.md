@@ -17,6 +17,7 @@ Also it provides you a localeService already built to deal with browser's locale
 - Jade (simplified html) : https://github.com/jadejs/jade
 - Grunt (compile + build) : http://gruntjs.com
 - NodeJS (proxy + local server) : http://nodejs.org
+
 ####Optional
 Just to make your life easier, we included those :
 - Angular Ui Router : https://github.com/angular-ui/ui-router
