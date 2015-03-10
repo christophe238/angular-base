@@ -1,10 +1,17 @@
 define([
     'core/CoreApp',
-    'core/app/manifest',
-    'core/controllers/manifest',
-    'core/directives/manifest',
-    'core/filters/manifest',
-    'core/services/manifest'
+
+    'core/app/AppLocalStorage',
+    'core/app/CoreRouterApp',
+    'core/app/LocaleApp',
+
+    'core/controllers/PageNotFoundController',
+
+    'core/directives/Spinner',
+
+    'core/services/AppStateService',
+    'core/services/CommonResolveStateService',
+    'core/services/LocaleService'
 ],function(){
 
 });

@@ -1,6 +1,5 @@
 define([
-    'angular',
-    'core/app/manifest'
+    'angular'
 ],function(ng){
 
     var app = ng.module('CoreApp',[
